@@ -53,4 +53,18 @@ Robot Control Panel
 <button class="button"> Backwards
 </button>
 </div>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "25b203e7-5f31-409d-9d6d-3ac7b41894a0", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "d7097d46-8894-4d8d-aa6d-fb65e32f6c8f", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
 </body>
+</html>
